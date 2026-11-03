@@ -1,0 +1,1 @@
+select {{ tag('CAST(PRICE_PER_NIGHT AS INT)') }} AS PRICE_PER_NIGHT_TAG from {{ ref('bronze_listings') }}
